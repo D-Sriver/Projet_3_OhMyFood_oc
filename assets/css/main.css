@@ -102,7 +102,7 @@ main .localisation {
           box-shadow: inset 0em 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-.localisation__form {
+.localisation_form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,6 +110,30 @@ main .localisation {
       -ms-flex-align: center;
           align-items: center;
   gap: 17px;
+}
+.localisation_form .form_input {
+  border: none;
+  background-color: transparent;
+}
+.localisation_form ::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #000000;
+}
+.localisation_form ::-moz-placeholder {
+  font-size: 16px;
+  color: #000000;
+}
+.localisation_form :-ms-input-placeholder {
+  font-size: 16px;
+  color: #000000;
+}
+.localisation_form ::-ms-input-placeholder {
+  font-size: 16px;
+  color: #000000;
+}
+.localisation_form ::placeholder {
+  font-size: 16px;
+  color: #000000;
 }
 
 body {
