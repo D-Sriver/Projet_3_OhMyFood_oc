@@ -62,4 +62,13 @@ input {
       -ms-flex-align: center;
           align-items: center;
   background-color: #FFFFFF;
+}
+.title-page .arrow-left {
+  position: absolute;
+  left: 20%;
+  top: 20px;
+}
+.title-page .arrow-left i {
+  font-size: 30px;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
