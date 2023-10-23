@@ -1,17 +1,22 @@
+@use '../utils/_colors' as color
+@use '../../sass/utils/_mixins' as mix
+
 .title-page
-    height: 65px
-    @include flexmid
-    background-color:$White-color
-    i
-        position: absolute
-        left: 8%
-        top: 17px
-        font-size: 30px
-        font-weight: bold
-    img
-        display: flex
-        width: 200px
-        height: 35px
-        justify-content: center
-        align-items: center
-        flex-shrink: 0
+  height: 65px
+  @include mix.flex-mid()
+  background-color: color.$White-color
+
+  i
+    position: absolute
+    left: 8%
+    top: 17px
+    font-size: 30px
+    font-weight: bold
+
+  img
+    display: flex
+    width: 200px
+    height: 35px
+    justify-content: center
+    align-items: center
+    flex-shrink: 0

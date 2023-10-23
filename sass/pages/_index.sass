@@ -1,32 +1,42 @@
-.localisation 
-    @include flexmid
-    height: 50px
-    width: 100%
-    background-color: darken($White-color,20%)
-    box-shadow: inset 0em 2px 4px rgba(0, 0, 0, 0.15)
+@use '../../sass/utils/_mixins' as mix
+@use '../utils/_colors' as colors
+@use '../../sass/base/_typography' as typo
+
+
+.localisation
+  @include mix.flex-mid()
+  height: 50px
+  width: 100%
+  background-color: darken(colors.$Black-color, 20%)
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15)
+
 .localisation_form
-    display: flex
-    align-items: center
-    gap: 17px
-    .form_input
-        border: none
-        background-color: transparent
-    ::placeholder
-        font-size: $text
-        color: $Black-color
-         
+  display: flex
+  align-items: center
+  gap: 17px
+
+  .form_input
+    border: none
+    background-color: transparent
+
+  ::placeholder
+    font-size: typo.$text()
+    color: colors.$Black-color
+
 .reservation
-    @include flexmid
-    flex-direction: column
-    gap: 20px
-    padding-top: 50px
-    padding-bottom: 50px
-    background-color: darken($White-color,10%)
-    text-align: center
-    > h1
-        font-size: $title
-        font-weight: bold
-        width: 80%
-    > p
-        font-size: $text
-        width: 90%
+  @include mix.flex-mid()
+  flex-direction: column
+  gap: 20px
+  padding-top: 50px
+  padding-bottom: 50px
+  background-color: darken(colors.$White-color, 10%)
+  text-align: center
+
+  > h1
+    font-size: typo.$title()
+    font-weight: bold
+    width: 80%
+
+  > p
+    font-size: typo.$text()
+    width: 90%
