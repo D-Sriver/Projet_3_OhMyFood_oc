@@ -1,6 +1,5 @@
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
@@ -12,10 +11,7 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;
-     -moz-text-size-adjust: none;
-      -ms-text-size-adjust: none;
-          text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 footer, header, nav, section, main {
@@ -51,15 +47,9 @@ input {
 
 .title-page {
   height: 65px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #FFFFFF;
 }
 .title-page i {
@@ -70,66 +60,32 @@ input {
   font-weight: bold;
 }
 .title-page img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 200px;
   height: 35px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .localisation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   width: 100%;
   background-color: #cccccc;
-  -webkit-box-shadow: inset 0em 2px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: inset 0em 2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0em 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .localisation_form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 17px;
 }
 .localisation_form .form_input {
   border: none;
   background-color: transparent;
-}
-.localisation_form ::-webkit-input-placeholder {
-  font-size: 16px;
-  color: #000000;
-}
-.localisation_form ::-moz-placeholder {
-  font-size: 16px;
-  color: #000000;
-}
-.localisation_form :-ms-input-placeholder {
-  font-size: 16px;
-  color: #000000;
-}
-.localisation_form ::-ms-input-placeholder {
-  font-size: 16px;
-  color: #000000;
 }
 .localisation_form ::placeholder {
   font-size: 16px;
@@ -137,19 +93,10 @@ input {
 }
 
 .reservation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 20px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -173,21 +120,19 @@ input {
   border-radius: 25px;
   color: #FFFFFF;
   font-size: 16px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
-  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   font-size: 16px;
   cursor: pointer;
 }
 
 .reservation_btn:hover {
-  -webkit-transition: 3s;
   transition: 3s;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), to(#a16be0));
   background: linear-gradient(#ff93e1, #a16be0);
 }
 
 body {
   background-color: grey;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
