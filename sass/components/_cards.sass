@@ -32,10 +32,11 @@
 
 /***********/
 
+
 .card-restaurant
   display: flex
   flex-direction: column
-  width: 340px
+  width: 90%
   height: 251px
   border-radius: 15px
   background: #fff
@@ -43,11 +44,52 @@
 
   img
     width: 100%
-    height: 70%
+    height: 75%
     object-fit: cover
+
+  .new
+    @include mix.flex-mid()
+    position: absolute
+    width: 90px
+    height: 30px
+    right: 7%
+    margin-top: 15px
+    background-color: colors.$Tertiary-color
+    color: colors.$Green-font-color
+    font-size: typo.$subtitle
+    font-weight: bold
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15)
 
 .card-body
   display: flex
-  flex-direction: column
+  flex-direction: row
+  justify-content: space-between
   gap: 10px
   padding: 10px
+
+.card-txt
+  display: flex
+  width: 100%
+  flex-direction: column
+  gap: 7px
+
+  h2
+    font-size: typo.$subtitle
+    font-weight: bold
+
+
+  p
+    font-size: typo.$text
+
+
+.card-heart
+  @include mix.flex-mid()
+  position: relative
+  right: 20px
+  font-size: 25px
+  transition: 0.3s
+
+#solid-heart
+  display: none
+
+
