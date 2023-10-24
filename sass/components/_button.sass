@@ -1,5 +1,5 @@
 @use '../../sass/utils/_mixins' as mixins
-@use '../utils/_colors' as vars
+@use '../utils/_colors' as color
 @use '../../sass/base/_typography' as typo
 
 
@@ -8,12 +8,12 @@
   height: 50px
   border: transparent
   border-radius: 25px
-  color: vars.$White-color()
+  color: color.$White-color()
   font-size: typo.$text()
-  background: vars.$btn-color()
+  background: color.$btn-color()
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25)
   cursor: pointer
 
 .reservation_btn:hover
   transition: 3s
-  background: vars.$btn-color-hover()
+  background: color.$btn-color-hover()

@@ -1,10 +1,12 @@
 @use './sass/base/_reset'
 @use './sass/base/_typography'
 @use './sass/utils/_mixins'
-@use './sass/utils/_colors'
+@use './sass/utils/_colors' as color
 @use './sass/layouts/_header'
 @use './sass/pages/_index'
 @use './sass/components/_button'
+@use './sass/components/_cards'
+@use './sass/layouts/_footer'
 
 body
-  background-color: grey
+  background-color: darken(color.$White-color, 10%)

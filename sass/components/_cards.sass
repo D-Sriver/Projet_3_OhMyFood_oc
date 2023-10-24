@@ -1,0 +1,53 @@
+@use '../utils/_colors' as colors
+@use '../../sass/base/_typography' as typo
+@use '../utils/_mixins' as mix
+
+
+.card-fonction
+  display: flex
+  align-items: center
+  width: 310px
+  height: 70px
+  border-radius: 20px
+  background-color: darken(colors.$White-color, 3%)
+  gap: 25px
+  font-size: typo.$text
+
+  > .round
+    @include mix.flex-mid()
+    position: relative
+    right: 10px
+    width: 25px
+    height: 25px
+    border-radius: 50%
+    background-color: colors.$Primary-color
+    color: colors.$White-color
+
+  > i
+    @include mix.flex-mid()
+    width: 25px
+    height: 25px
+    font-size: typo.$subtitle
+    color: darken(colors.$White-color, 50%)
+
+/***********/
+
+.card-restaurant
+  display: flex
+  flex-direction: column
+  width: 340px
+  height: 251px
+  border-radius: 15px
+  background: #fff
+  overflow: hidden
+
+  img
+    width: 100%
+    height: 70%
+    object-fit: cover
+
+.card-body
+  display: flex
+  flex-direction: column
+  gap: 10px
+  padding: 10px

@@ -2,12 +2,16 @@
 @use '../utils/_colors' as colors
 @use '../../sass/base/_typography' as typo
 
-
+main
+  display: flex
+  flex-direction: column
+  gap: 50px
+/* -----------localisation---------- */
 .localisation
   @include mix.flex-mid()
   height: 50px
   width: 100%
-  background-color: darken(colors.$Black-color, 20%)
+  background-color: darken(colors.$White-color, 20%)
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15)
 
 .localisation_form
@@ -18,18 +22,25 @@
   .form_input
     border: none
     background-color: transparent
+    outline-style: none
+    font-size: typo.$text()
+    transition: 0.3s
+
+    &:focus
+      background-color: darken(colors.$White-color, 15%)
+      padding: 5px 6px
+      border-radius: 20px
 
   ::placeholder
     font-size: typo.$text()
     color: colors.$Black-color
 
+/* -----------réservation---------- */
+
 .reservation
   @include mix.flex-mid()
   flex-direction: column
   gap: 20px
-  padding-top: 50px
-  padding-bottom: 50px
-  background-color: darken(colors.$White-color, 10%)
   text-align: center
 
   > h1
@@ -40,3 +51,40 @@
   > p
     font-size: typo.$text()
     width: 90%
+
+.fonctionnement
+  font-weight: bold
+  background-color: colors.$White-color
+  height: 440px
+
+  h1
+    font-size: typo.$title()
+    padding-top: 50px
+    padding-bottom: 30px
+    padding-left: 20px
+
+.fonctionnement_container
+  display: flex
+  flex-direction: column
+
+  > ol
+    @include mix.flex-mid()
+    flex-direction: column
+    gap: 20px
+
+/* -----------restaurant---------- */
+
+.restaurants
+  display: flex
+  flex-direction: column
+  gap: 20px
+  font-weight: bold
+  > h1
+    font-size: typo.$title()
+    font-weight: bold
+    padding-left: 20px
+
+.restaurants_container
+  @include mix.flex-mid()
+  flex-direction: column
+  gap: 20px
