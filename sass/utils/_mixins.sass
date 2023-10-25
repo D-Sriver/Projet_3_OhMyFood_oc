@@ -1,4 +1,21 @@
+@use '../utils/_colors' as color
+@use '../../sass/base/_typography' as typo
+
 @mixin flex-mid
-    display: flex
-    justify-content: center
-    align-items: center
+  display: flex
+  justify-content: center
+  align-items: center
+
+@mixin button
+  color: rgb(255, 255, 255)
+  font-size: 16px
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px 0px
+  cursor: pointer
+  width: 220px
+  height: 50px
+  border-width: initial
+  border-style: initial
+  border-color: rgba(0, 0, 0, 0)
+  border-image: initial
+  border-radius: 25px
+  background: color.$btn-color
