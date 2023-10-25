@@ -3,6 +3,7 @@
 @use '../../sass/base/_typography' as typo
 
 main
+  font-family: Roboto, sans-serif
   display: flex
   flex-direction: column
   gap: 50px
@@ -69,7 +70,8 @@ main
 
   > ol
     @include mix.flex-mid()
-    flex-direction: column
+    flex-direction: row
+    flex-wrap: wrap
     gap: 20px
 
 /* -----------restaurant---------- */
