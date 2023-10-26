@@ -7,10 +7,27 @@
   background-color: color.$White-color
 
   i
-    color: color.$White-color
+    display: none
+
+  img
+    display: flex
+    width: 200px
+    height: 35px
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+
+
+.menu-page
+  @include mix.flex-mid()
+  height: 65px
+  background-color: color.$White-color
+
+  i
+    color: color.$Black-color
     position: absolute
-    left: 8%
-    top: 17px
+    left: 20px
+    top: 15px
     font-size: 30px
     font-weight: bold
 
@@ -21,8 +38,3 @@
     justify-content: center
     align-items: center
     flex-shrink: 0
-
-@media screen and (min-width: 1024px)
-  .title-page
-    i
-      color: color.$Black-color

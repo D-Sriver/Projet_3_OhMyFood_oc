@@ -5,8 +5,8 @@
 .card-fonction
   display: flex
   align-items: center
-  width: 310px
-  height: 70px
+  width: 320px
+  height: 80px
   border-radius: 20px
   background-color: darken(colors.$White-color, 3%)
   gap: 25px
@@ -39,6 +39,7 @@
 .card-restaurant
   display: flex
   flex-direction: column
+  justify-content: flex-start
   width: 90%
   height: 251px
   border-radius: 15px
@@ -52,11 +53,11 @@
 
   .new
     @include mix.flex-mid()
-    position: absolute
-    width: 100px
+    position: relative
+    bottom: 170px
+    left: 20px
+    width: 130px
     height: 30px
-    right: 40px
-    margin-top: 15px
     background-color: colors.$Tertiary-color
     color: colors.$Green-font-color
     font-size: typo.$subtitle
@@ -64,9 +65,6 @@
 
 .card-body
   display: flex
-  flex-direction: row
-  justify-content: space-between
-  gap: 10px
   padding: 10px
 
 .card-txt
@@ -94,4 +92,19 @@
 #solid-heart
   display: none
 
+@media screen and (min-width: 1024px)
 
+  .restaurants
+    display: flex
+    flex-wrap: wrap
+  .restaurants_container
+    padding: 20px
+    display: flex
+    flex-wrap: wrap
+    gap: 50px
+    flex-direction: row
+  .card-restaurant
+    width: 400px
+    height: 250px
+  .card-heart
+    font-size: 30px
