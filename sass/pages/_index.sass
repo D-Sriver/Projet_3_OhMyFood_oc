@@ -6,7 +6,6 @@ main
   font-family: Roboto, sans-serif
   display: flex
   flex-direction: column
-  gap: 50px
 /* -----------localisation---------- */
 .localisation
   @include mix.flex-mid()
@@ -41,6 +40,8 @@ main
 .reservation
   @include mix.flex-mid()
   flex-direction: column
+  padding-top: 30px
+  padding-bottom: 30px
   gap: 20px
   text-align: center
 
@@ -61,7 +62,7 @@ main
 
   h1
     font-size: typo.$title()
-    padding: 50px 0 30px 100px
+    padding: 50px 0 30px 50px
 
   ol
     @include mix.flex-mid()
@@ -83,14 +84,15 @@ main
 /* -----------restaurant---------- */
 
 .restaurants
+  padding-top: 30px
+  padding-bottom: 30px
+  background-color: darken(colors.$White-color, 10%)
   display: flex
   flex-direction: column
   gap: 20px
 
   h1
-    @include mix.flex-mid()
-    width: 180px
-    height: 40px
+    padding: 50px 0 30px 50px
     font-size: typo.$title()
     font-weight: bold
 

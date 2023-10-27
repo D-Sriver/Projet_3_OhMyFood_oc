@@ -18,6 +18,10 @@
   border: none
   transition: background-color 0.3s
 
-.btn:hover
+.btn:hover, .btn-menu:hover
   transform: scale(1.03)
   background: color.$btn-color-hover
+
+@mixin card-hover
+  transform: scale(1.03)
+  box-shadow: 0 4px 15px 0 rgba(131, 64, 212, 0.31)

@@ -4,6 +4,7 @@
 
 .card-fonction
   display: flex
+  color: colors.$Black-color
   align-items: center
   width: 320px
   height: 80px
@@ -12,6 +13,11 @@
   gap: 25px
   font-size: typo.$text
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15)
+  cursor: pointer
+  transition: 0.3s
+
+  &:hover
+    @include mix.card-hover()
 
   > .round
     @include mix.flex-mid()
