@@ -7,7 +7,7 @@
   align-items: center
 
 @mixin button
-  background: color.$btn-color
+//  background: color.$btn-color
   color: color.$White-color
   width: 220px
   height: 50px
@@ -16,12 +16,39 @@
   cursor: pointer
   border-radius: 25px
   border: none
-  transition: background-color 0.3s
+//
 
-.btn:hover, .btn-menu:hover
-  transform: scale(1.03)
-  background: color.$btn-color-hover
+.btn, .btn-menu
+  @include flex-mid()
+  font-size: 16px
+  color: color.$White-color
+  position: relative
+  background: color.$btn-color
+  border: none
+  border-radius: 25px
+  cursor: pointer
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35)
+  transition: background-color 0.5s ease-in-out
+
+  &::before
+    content: ""
+    border-radius: 25px
+    position: absolute
+    width: 100%
+    background-color: white
+    opacity: 0
+    transition: 0.5s
+
+  &:hover::before
+    height: 100%
+    opacity: 20%
+    border-radius: 25px
+
+  &:hover
+    background-color: #3498db
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.5)
+
 
 @mixin card-hover
   transform: scale(1.03)
-  box-shadow: 0 4px 15px 0 rgba(131, 64, 212, 0.31)
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.31)
