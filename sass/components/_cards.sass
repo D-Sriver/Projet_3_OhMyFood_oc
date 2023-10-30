@@ -106,8 +106,10 @@
 #solid-heart
   display: none
 
-
 .menu-card-block
+  opacity: 0
+  animation: translate 0.5s ease forwards
+
   display: flex
   flex-direction: row
   border-radius: 15px
@@ -116,7 +118,7 @@
 
   &:hover
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.20)
-    transition: 0.5s ease-in-out
+    transition: 0.5s
 
 .menu-txt
   width: 900px
