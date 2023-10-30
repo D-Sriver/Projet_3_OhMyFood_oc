@@ -106,6 +106,47 @@
 #solid-heart
   display: none
 
+
+.menu-card-block
+  display: flex
+  flex-direction: row
+  border-radius: 15px
+  background-color: colors.$White-color
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.10)
+
+  &:hover
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.20)
+    transition: 0.5s ease-in-out
+
+.menu-txt
+  width: 900px
+  padding: 12px
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+
+  h2
+    font-size: typo.$title
+    font-weight: bold
+    padding-bottom: 15px
+
+  p
+    font-size: 21px
+    font-weight: lighter
+
+
+.menu-card-block-price
+  @include mix.flex-mid()
+  justify-content: space-between
+  font-weight: bold
+
+  p
+    font-size: typo.$text
+    font-weight: bold
+    padding: 40px 10px 0 0
+
+
 @media screen and (min-width: 1024px)
 
   .restaurants
