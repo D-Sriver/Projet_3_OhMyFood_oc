@@ -1,0 +1,23 @@
+@use '../utils/_colors' as colors
+@use '../utils/_mixins' as mix
+
+.loader-wrapper
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: colors.$White-color
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 9999
+  animation: forwards 3s ease-in-out 0.5s fadeOut
+
+.loader
+  border-top: 10px solid colors.$Primary-color
+  border-right: 10px solid transparent
+  border-bottom: 10px solid colors.$Primary-color
+  border-left: 10px solid transparent
+  border-radius: 50%
+  width: 160px
+  height: 160px
+  animation: spin 3s infinite

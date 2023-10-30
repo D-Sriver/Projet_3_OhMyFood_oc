@@ -1,0 +1,79 @@
+@use '../../sass/utils/_mixins' as mix
+@use '../utils/_colors' as colors
+@use '../../sass/base/_typography' as typo
+
+main
+  font-family: Roboto, sans-serif
+  background-color: colors.$White-color
+
+.bc-image-menu
+  height: 270px
+
+  img
+    object-fit: cover
+    height: 350px
+    width: 100%
+
+.menu
+  display: flex
+  flex-direction: column
+  gap: 40px
+  padding: 0 13px 40px 13px
+  border-radius: 40px 40px 0 0
+  background-color: darken(colors.$White-color, 5%)
+
+.menu-card
+  display: flex
+  flex-direction: column
+  gap: 15px
+  width: 100%
+
+.menu-title
+  position: relative
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  gap: 20px
+  font-family: "Shrikhand", sans-serif
+  font-size: typo.$menu-title
+  padding: 35px 0 30px 0
+
+  h1
+    position: relative
+    top: 4px
+
+.menu-subtitle
+  display: flex
+  flex-direction: row
+  font-size: typo.$text
+  text-transform: uppercase
+
+
+  p
+    font-weight: 300
+    text-transform: uppercase
+    padding-bottom: 5px
+    border-bottom: 3px solid colors.$Tertiary-color
+
+.sub-t
+  width: 45px
+
+.entree, .plats, .desserts
+  display: flex
+  flex-direction: column
+  gap: 12px
+
+.menu_button
+  @include mix.flex-mid()
+  padding-top: 20px
+
+
+@media screen and (min-width: 1024px)
+  .menu
+    margin: 0 100px 0 100px
+    padding: 0 200px 40px 200px
+
+
+
+

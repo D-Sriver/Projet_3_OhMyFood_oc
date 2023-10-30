@@ -41,3 +41,23 @@
 #anim9
   animation-delay: 2.7s
 
+
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+    opacity: 1
+  50%
+    transform: rotate(180deg)
+    opacity: 1
+  100%
+    transform: rotate(360deg)
+    opacity: 0
+
+@keyframes fadeOut
+  0%
+    opacity: 1
+  99%
+    opacity: 0.8%
+  100%
+    opacity: 0
+    display: none
