@@ -1,0 +1,41 @@
+@use '../utils/colors' as colors
+@use '../../sass/utils/animation' as anim
+
+.card-heart
+  position: relative
+  display: flex
+  right: 20px
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  transition: transform 0.2s
+
+
+.card-heart i
+  font-size: 30px
+  color: darken(colors.$White-color, 15%)
+  border: 1px
+  transition: transform 0.2s
+
+
+#heart-checkbox1
+  position: relative
+  opacity: 0
+
+#heart-checkbox2
+  position: relative
+  opacity: 0
+
+
+#heart-checkbox1:checked + .card-heart i,
+#heart-checkbox2:checked + .card-heart i,
+#heart-checkbox3:checked + .card-heart i,
+#heart-checkbox4:checked + .card-heart i
+  color: colors.$Primary-color
+  animation: beat 0.5s ease-in-out
+
+
+
+
+
+
