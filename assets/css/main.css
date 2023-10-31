@@ -468,6 +468,18 @@ main {
   display: none;
 }
 
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  width: 0;
+  opacity: 0;
+  border-radius: 0 1rem 1rem 0;
+  transform-origin: left;
+  transition: 0.5s;
+}
+
 .menu-card-block {
   opacity: 0;
   animation: translate 0.5s ease forwards;
@@ -479,7 +491,11 @@ main {
 }
 .menu-card-block:hover {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.5s;
+}
+
+.menu-card-block:hover .checkbox {
+  opacity: 1;
+  width: 100px;
 }
 
 .menu-txt {
@@ -493,10 +509,16 @@ main {
   font-size: 24px;
   font-weight: bold;
   padding-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-txt p {
   font-size: 21px;
   font-weight: lighter;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu-card-block-price {
