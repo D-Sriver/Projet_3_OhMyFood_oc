@@ -111,7 +111,7 @@
   opacity: 0
   border-radius: 0 1rem 1rem 0
   transform-origin: left
-  transition: 0.5s
+  transition: 0.4s
 
 .menu-card-block
   opacity: 0
@@ -128,6 +128,8 @@
 .menu-card-block:hover .checkbox
   opacity: 1
   width: 100px
+  @media screen and (max-width: 1024px)
+    width: 170px
 
 .menu-txt
   width: 900px
@@ -173,14 +175,18 @@
   .restaurants
     display: flex
     flex-wrap: wrap
+
   .restaurants_container
     padding: 20px
     display: flex
     flex-wrap: wrap
     gap: 50px
     flex-direction: row
+
   .card-restaurant
     width: 400px
     height: 250px
+
   .card-heart
     font-size: 30px
+
