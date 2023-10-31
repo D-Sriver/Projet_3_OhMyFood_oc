@@ -10,9 +10,10 @@
   justify-content: center
   align-items: center
   z-index: 9999
-  animation: forwards 3s ease-in-out 0.5s fadeOut
+  animation: forwards 2s ease-in-out 1s fadeOut
 
 .loader
+  position: relative
   border-top: 10px solid colors.$Primary-color
   border-right: 10px solid transparent
   border-bottom: 10px solid colors.$Primary-color
@@ -20,4 +21,15 @@
   border-radius: 50%
   width: 160px
   height: 160px
-  animation: spin 3s infinite
+  animation: spin 3s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55)
+
+.loader-reverse
+  position: absolute
+  border-top: 10px solid colors.$Secondary-color
+  border-right: 10px solid transparent
+  border-bottom: 10px solid colors.$Secondary-color
+  border-left: 10px solid transparent
+  border-radius: 50%
+  width: 100px
+  height: 100px
+  animation: spin 3s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55) reverse
