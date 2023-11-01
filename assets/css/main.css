@@ -615,8 +615,20 @@ main {
   0%, 100% {
     transform: scale(1);
   }
+  25%, 75% {
+    transform: scale(1.2) translate(0, -2px);
+  }
   50% {
-    transform: scale(1.2);
+    transform: scale(1);
+  }
+  0%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
   }
 }
 @keyframes translate {
@@ -629,39 +641,39 @@ main {
   }
 }
 #anim1 {
-  animation-delay: 0.3s;
+  animation-delay: 1.3s;
 }
 
 #anim2 {
-  animation-delay: 0.6s;
+  animation-delay: 1.6s;
 }
 
 #anim3 {
-  animation-delay: 0.9s;
+  animation-delay: 1.9s;
 }
 
 #anim4 {
-  animation-delay: 1.2s;
+  animation-delay: 2.2s;
 }
 
 #anim5 {
-  animation-delay: 1.5s;
+  animation-delay: 2.5s;
 }
 
 #anim6 {
-  animation-delay: 1.8s;
+  animation-delay: 2.8s;
 }
 
 #anim7 {
-  animation-delay: 2.1s;
+  animation-delay: 3.1s;
 }
 
 #anim8 {
-  animation-delay: 2.4s;
+  animation-delay: 3.4s;
 }
 
 #anim9 {
-  animation-delay: 2.7s;
+  animation-delay: 3.7s;
 }
 
 @keyframes spin {
