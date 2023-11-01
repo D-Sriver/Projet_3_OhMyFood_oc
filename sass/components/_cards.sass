@@ -112,6 +112,7 @@
   border-radius: 0 1rem 1rem 0
   transform-origin: left
   transition: 0.4s
+  overflow: hidden
 
 .menu-card-block
   opacity: 0
@@ -121,13 +122,19 @@
   border-radius: 15px
   background-color: colors.$White-color
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.10)
+  transition: 0.4s
 
   &:hover
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.20)
 
+.box
+  .fa-circle-check
+    font-size: 2rem
+    color: colors.$White-color
+
 .menu-card-block:hover .checkbox
   opacity: 1
-  width: 100px
+  width: 120px
   @media screen and (max-width: 1024px)
     width: 170px
 
@@ -171,6 +178,8 @@
   height: 100%
 
 @media screen and (min-width: 1024px)
+  .menu-car.checkbox
+    width: 20%
 
   .restaurants
     display: flex

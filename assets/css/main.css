@@ -60,7 +60,7 @@ input {
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
   transition: background-color 0.5s ease-in-out;
 }
-.btn::before, .btn-menu::before {
+.btn::after, .btn-menu::after {
   content: "";
   border-radius: 25px;
   position: absolute;
@@ -69,7 +69,7 @@ input {
   opacity: 0;
   transition: 0.5s;
 }
-.btn:hover::before, .btn-menu:hover::before {
+.btn:hover::after, .btn-menu:hover::after {
   height: 100%;
   opacity: 20%;
   border-radius: 25px;
@@ -478,6 +478,7 @@ main {
   border-radius: 0 1rem 1rem 0;
   transform-origin: left;
   transition: 0.4s;
+  overflow: hidden;
 }
 
 .menu-card-block {
@@ -488,14 +489,20 @@ main {
   border-radius: 15px;
   background-color: #FFFFFF;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
 }
 .menu-card-block:hover {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
+.box .fa-circle-check {
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+
 .menu-card-block:hover .checkbox {
   opacity: 1;
-  width: 100px;
+  width: 120px;
 }
 @media screen and (max-width: 1024px) {
   .menu-card-block:hover .checkbox {
@@ -546,6 +553,9 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
+  .menu-car.checkbox {
+    width: 20%;
+  }
   .restaurants {
     display: flex;
     flex-wrap: wrap;
