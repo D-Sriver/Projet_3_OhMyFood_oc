@@ -31,7 +31,6 @@ blockquote, q {
 
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
-  content: none;
 }
 
 table {
@@ -287,7 +286,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 100%;
+  min-width: 540px;
 }
 
 .menu-title {
