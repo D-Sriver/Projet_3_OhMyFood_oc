@@ -79,9 +79,7 @@ Shrikhand (Logo et titres), Roboto (Texte)
 
 ### Technologies Utilisées
 
-<img src="https://www.vectorlogo.zone/logos/sass-lang/sass-lang-icon.svg" alt="sass" style="padding: 0 12px" height="50"/>
-<img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" style="padding: 0 12px" height="50"/>
-<img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="github" style="padding: 0 12px" height="50"/>
+<img src="https://www.vectorlogo.zone/logos/sass-lang/sass-lang-icon.svg" alt="sass" style="padding: 0 12px" height="50"/><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" style="padding: 0 12px" height="50"/><img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="github" style="padding: 0 12px" height="50"/>
 
 ## IDE
 
